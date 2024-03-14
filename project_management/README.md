@@ -49,9 +49,31 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[byte5](https://byte5.de)**
 - **[OP.GG](https://op.gg)**
 
+
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Copy the .env.example file to .env:
+
+cp .env.example .env
+
+## Generate application key:
+
+php artisan key:generate
+
+## Set up your database configuration in the .env file:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+
+## Migrate the database:
+
+php artisan migrate
 
 ## Code of Conduct
 
