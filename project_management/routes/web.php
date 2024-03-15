@@ -14,11 +14,11 @@ use  App\Http\Controllers\ProjectController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/projects', [ProjectController::class, 'index']);
+Route::get('/', [ProjectController::class, 'index']);
 Route::post('/projects', [ProjectController::class, 'create']);
 Route::delete('/projects/{id}', [ProjectController::class, 'delete']);
 Route::get('/projects/{id}', [ProjectController::class, 'getProjectDetails']);
