@@ -35,7 +35,7 @@ class ProjectController extends Controller
             $task = new task($taskData);
             $project->tasks()->save($task);
             if($project){
-                $response = ['message' => 'Project updated successfully', 'code'=>200];
+                $response = ['message' => 'Project Added successfully', 'code'=>200];
             }else{
                 $response = ['message' => 'Error occured while updating projects!', 'code'=>201];
             }
